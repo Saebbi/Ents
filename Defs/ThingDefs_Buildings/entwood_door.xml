@@ -1,50 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
- <ThingDef ParentName="BuildingBase" Name="EntwoodDoor" Abstract="False">
-    <thingClass>Building_Door</thingClass>
-    <blueprintClass>Blueprint_Door</blueprintClass>
-    <category>Building</category>
-    <blueprintGraphicData>
-      <texPath>Things/Building/Door/Door_Blueprint</texPath>
-    </blueprintGraphicData>
-    <altitudeLayer>DoorMoveable</altitudeLayer>
-    <fillPercent>1</fillPercent>
-    <useHitPoints>true</useHitPoints>
-    <stuffCategories>   
-	  <li>Enty</li>
-    </stuffCategories>
-    <statBases>
-      <MaxHitPoints>250</MaxHitPoints>
-      <Flammability>0.8</Flammability>
-    </statBases>
-    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
-    <selectable>true</selectable>
-    <tickerType>Normal</tickerType>
-    <rotatable>false</rotatable>
-    <soundImpactDefault>Wood_strike</soundImpactDefault>
-    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
-    <designationCategory>Structure</designationCategory>
-    <holdsRoof>true</holdsRoof>
-    <staticSunShadowHeight>1.0</staticSunShadowHeight>
-    <blockLight>true</blockLight>
-    <drawerType>RealtimeOnly</drawerType>
-    <building>
-			<isInert>true</isInert>
-			<canPlaceOverWall>true</canPlaceOverWall>
-      <soundDoorOpenPowered>DoorOpenPowered</soundDoorOpenPowered>
-      <soundDoorClosePowered>DoorClosePowered</soundDoorClosePowered>
-      <soundDoorOpenManual>DoorOpenManual</soundDoorOpenManual>
-      <soundDoorCloseManual>DoorCloseManual</soundDoorCloseManual>
-    </building>
-    <comps>
-      <li Class="CompProperties_Forbiddable"/>
-    </comps>
-		<placeWorkers>
-			<li>PlaceWorker_DoorLearnOpeningSpeed</li>
-		</placeWorkers>
-  </ThingDef>
-
  <ThingDef ParentName="DoorBase">
     <defName>Door</defName>
     <label>door</label>
