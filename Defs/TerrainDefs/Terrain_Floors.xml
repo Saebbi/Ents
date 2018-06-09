@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <TerrainDef Name="FloorBase" Abstract="True">
+    <layerable>true</layerable>
+    <affordances>
+      <li>Light</li>
+      <li>Heavy</li>
+      <li>SmoothHard</li>
+    </affordances>
+    <statBases>
+      <WorkToBuild>135</WorkToBuild>
+    </statBases>
+    <designationCategory>Floors</designationCategory>
+    <fertility>0</fertility>
+    <constructEffect>ConstructDirt</constructEffect>
+    <acceptTerrainSourceFilth>True</acceptTerrainSourceFilth>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+  </TerrainDef>
+
+	<TerrainDef  ParentName="FloorBase">
+		<defName>EntWoodFloor</defName>
+		<label>Ent wood floor</label>
+		<renderPrecedence>250</renderPrecedence>
+		<description>Ent wood plank flooring. For that warm, homey feeling. While it is easy to lay, it is also flammable.</description>
+		<texturePath>Terrain/Surfaces/entwoodfloor</texturePath>
+		<burnedDef>BurnedWoodPlankFloor</burnedDef>
+		<color>(108,78,55)</color>
+		<statBases>
+			<Beauty>4</Beauty>
+			<WorkToBuild>250</WorkToBuild>
+			<Flammability>0.18</Flammability>
+		</statBases>
+		<costList>
+			<EntWood>3</EntWood>
+		</costList>
+		<constructEffect>ConstructWood</constructEffect>
+		<designationHotKey>Misc7</designationHotKey>
+	</TerrainDef>
+	
+
+</Defs>

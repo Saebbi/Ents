@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<LifeStageDef>
+    <defName>EntSapling</defName>
+    <label>sapling</label>
+    <bodySizeFactor>0.25</bodySizeFactor>
+		<foodMaxFactor>1.5</foodMaxFactor>
+		<healthScaleFactor>1.5</healthScaleFactor>
+    <hungerRateFactor>0.2</hungerRateFactor>
+    <marketValueFactor>0.5</marketValueFactor>
+    <statFactors>
+      <MoveSpeed>0.2</MoveSpeed>
+    </statFactors>
+  </LifeStageDef>
+
+  <LifeStageDef>
+    <defName>EntYoung</defName>
+    <label>Young Ent</label>
+    <bodySizeFactor>0.4</bodySizeFactor>
+		<foodMaxFactor>1.5</foodMaxFactor>
+		<healthScaleFactor>2.0</healthScaleFactor>
+    <hungerRateFactor>0.4</hungerRateFactor>
+    <marketValueFactor>0.7</marketValueFactor>
+    <statFactors>
+      <MoveSpeed>0.3</MoveSpeed>
+    </statFactors>
+  </LifeStageDef>
+
+  <LifeStageDef>
+    <defName>EntChild</defName>
+    <label>child</label>
+    <bodySizeFactor>0.8</bodySizeFactor>
+    <healthScaleFactor>2.5</healthScaleFactor>
+    <hungerRateFactor>0.6</hungerRateFactor>
+    <marketValueFactor>0.9</marketValueFactor>
+    <statFactors>
+      <MoveSpeed>0.65</MoveSpeed>
+    </statFactors>
+  </LifeStageDef>
+
+  <LifeStageDef>
+    <defName>Entling</defName>
+    <label>entling</label>
+    <adjective>teenage</adjective>
+    <reproductive>true</reproductive>
+    <bodySizeFactor>1.5</bodySizeFactor>
+    <healthScaleFactor>4.0</healthScaleFactor>
+    <statFactors>
+      <MoveSpeed>0.95</MoveSpeed>
+    </statFactors>
+  </LifeStageDef>
+  
+  <LifeStageDef>
+    <defName>EntAdult</defName>
+    <label>adult</label>
+    <visible>false</visible>
+    <reproductive>true</reproductive>
+  </LifeStageDef>
+  
+</Defs>

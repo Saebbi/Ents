@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <PawnKindDef Name="EntBase" Abstract="True">
+    <defaultFactionType>EntFaction</defaultFactionType>
+	<race>Ent_Race</race>
+    <backstoryCategory>Ent_Backstory</backstoryCategory>
+    <baseRecruitDifficulty>0.65</baseRecruitDifficulty>
+    <chemicalAddictionChance>0.00</chemicalAddictionChance>
+    <invNutrition>12</invNutrition>
+    <invFoodDef>Ent_Draught</invFoodDef>
+  </PawnKindDef>
+
+  <PawnKindDef Name="EntMelee" ParentName="EntBase">
+    <defName>EntMelee</defName>
+    <label>warrior</label>
+	<race>Ent_Race</race>
+	<backstoryCategory>Ent_Backstory</backstoryCategory>
+	
+    <combatPower>200</combatPower>
+    <minGenerationAge>50</minGenerationAge>
+  </PawnKindDef>
+  
+  <PawnKindDef Name="EntRange" ParentName="EntBase">
+    <defName>EntRange</defName>
+    <label>siege</label>
+	<race>Ent_Race</race>
+	<backstoryCategory>Ent_Backstory</backstoryCategory>
+    <weaponMoney>
+      <min>200</min>
+      <max>900</max>
+    </weaponMoney>
+    <weaponTags>
+      <li>EntBoulder</li>
+    </weaponTags>
+    <combatPower>250</combatPower>
+    <minGenerationAge>50</minGenerationAge>
+  </PawnKindDef>
+  
+  	<PawnKindDef ParentName="EntBase">
+		<defName>EntChief</defName>
+		<label>chief</label>
+    <combatPower>300</combatPower>
+		<baseRecruitDifficulty>0.90</baseRecruitDifficulty>
+    <minGenerationAge>300</minGenerationAge>
+    <factionLeader>true</factionLeader>
+	</PawnKindDef>
+
+</Defs>

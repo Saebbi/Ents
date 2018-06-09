@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  <AlienRace.BackstoryDef Name="POTA_BG_Base" Abstract="True">
+    <spawnCategories>
+      <li>Ent_Backstory</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+   
+  <AlienRace.BackstoryDef>
+    <defName>Ent_Backstory_Child</defName>
+	<title>Entling</title>
+	<baseDescription>NAME is an Entling, a juvenile Ent.</baseDescription>
+	<slot>Childhood</slot>
+	<skillGains>
+	  <li>
+	    <defName>Melee</defName>
+		<amount>5</amount>
+	  </li>
+	  <li>
+	    <defName>Growing</defName>
+		<amount>8</amount>
+	  </li>
+	</skillGains>
+	<disallowedTraits>
+      <li>
+        <defName>Pyromaniac</defName>
+      </li>
+    </disallowedTraits>
+    <maleCommonality>20</maleCommonality>
+	<femaleCommonality>20</femaleCommonality>
+	<spawnCategories>
+	  <li>Ent_Backstory</li>
+	</spawnCategories>
+  </AlienRace.BackstoryDef>
+  
+  
+  <AlienRace.BackstoryDef>
+    <defName>Ent_Backstory_AdultWarrior</defName>
+	<title>Ent</title>
+	<baseDescription>NAME is a grown Ent, a destined guardian of the Forest.</baseDescription>
+	<slot>Adulthood</slot>
+	<skillGains>
+	  <li>
+	    <defName>Melee</defName>
+		<amount>6</amount>
+	  </li>
+	  <li>
+	    <defName>Shooting</defName>
+		<amount>5</amount>
+	  </li>
+	  <li>
+	    <defName>Social</defName>
+		<amount>2</amount>
+	  </li>
+	  <li>
+	    <defName>Growing</defName>
+		<amount>8</amount>
+	  </li>
+	</skillGains>
+	<linkedBackstory>Ent_Backstory_Child</linkedBackstory>
+	<spawnCategories>
+	  <li>Ent_Backstory</li>
+	</spawnCategories>
+	<bioAgeRange>
+        <min>18</min>
+        <max>800</max>
+    </bioAgeRange>
+  </AlienRace.BackstoryDef>
+  
+</Defs>

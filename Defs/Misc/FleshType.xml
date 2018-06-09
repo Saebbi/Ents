@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+	<FleshTypeDef>
+		<defName>entFlesh</defName>
+		<corpseCategory>CorpsesAnimal</corpseCategory>
+		<requiresBedForSurgery>true</requiresBedForSurgery>
+		<wounds>
+			<li>
+				<texture>Pawn/Wounds/WoundTreeA</texture>
+			</li>
+			<li>
+				<texture>Pawn/Wounds/WoundTreeB</texture>
+			</li>
+			<li>
+				<texture>Pawn/Wounds/WoundTreeC</texture>
+			</li>
+		</wounds>
+	</FleshTypeDef>
+	
+</Defs>

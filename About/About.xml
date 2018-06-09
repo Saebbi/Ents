@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Lord of the Rims - Ents</name>
+  <author>Saebbi and Napon</author>
+  <targetVersion>0.18.0</targetVersion>
+  <description>
+  Adds Ents to RimWorld. Requires JecsTools and Humanoid Alien Framework.
+  
+  Textures were made by Napon.
+  XML done by Saebbi.
+  
+  Regeneration Assembly by ChJees, Texture for Blood by Filthy Peasant.
+  </description>
+</ModMetaData>

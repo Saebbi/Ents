@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <FactionDef Abstract="True" Name="EntFactionBase">
+    <homeIconPath>World/WorldObjects/DefaultFactionBase</homeIconPath>
+    <colorSpectrum>
+      <li>(0, 0.737, 0.847)</li>
+    </colorSpectrum>
+	<hairTags>
+		<li>NonExisting</li>
+	</hairTags>
+  </FactionDef>
+  
+  <FactionDef ParentName="EntFactionBase">
+    <defName>EntPlayerTribe</defName>
+    <label>Ent Tribe</label>
+    <description>Your own tribe.</description>
+    <isPlayer>true</isPlayer>
+    <pawnsPlural>colonists</pawnsPlural>
+    <basicMemberKind>PlayerEnt</basicMemberKind>
+		<techLevel>Neolithic</techLevel>
+		<backstoryCategory>Ent_Backstory</backstoryCategory>
+		<expandingIconTexture>World/WorldObjects/Expanding/Village</expandingIconTexture>
+		<homeIconPath>World/WorldObjects/TribalFactionBase</homeIconPath>
+		<pawnNameMaker>NamerPersonTribal</pawnNameMaker>
+		<baseNameMaker>NamerFactionBasePlayerTribe</baseNameMaker>
+		<baseNameMakerPlayer>NamerFactionTribal</baseNameMakerPlayer>
+		<factionNameMakerPlayer>NamerFactionBaseTribal</factionNameMakerPlayer>
+		<geneticVariance>1</geneticVariance>
+	<startingResearchTags>
+      <li>TribalStart</li>
+    </startingResearchTags>
+    </FactionDef>
+
+</Defs>

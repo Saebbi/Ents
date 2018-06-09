@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <TraitDef>
+    <defName>EntTrait</defName>
+    <commonality>0</commonality>
+    <degreeDatas>
+      <li>
+        <label>Ent</label>
+        <description>NAME is an Ent, a wooden guardian of the Forest.</description>
+		<statOffsets>
+			<PlantWorkSpeed>2</PlantWorkSpeed>
+			<PlantHarvestYield>2</PlantHarvestYield>
+			<MentalBreakThreshold>-0.90</MentalBreakThreshold>
+			<ImmunityGainSpeed>2</ImmunityGainSpeed>
+		</statOffsets>
+	  </li>
+    </degreeDatas>
+  </TraitDef>
+
+</Defs>
