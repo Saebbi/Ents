@@ -83,7 +83,31 @@
 								</li>
 								<li>
 									<weight>10</weight>
-									<only>RGBA(0.329,0.274,0.0,1)</only>
+									<only>RGBA(0.498,0.262,0.011,1)</only>
+								</li>
+								<li>
+									<weight>10</weight>
+									<only>RGBA(0.26,0.141,0.007,1)</only>
+								</li>
+								<li>
+									<weight>10</weight>
+									<only>RGBA(0.219,0.113,0.003,1)</only>
+								</li>
+								<li>
+									<weight>10</weight>
+									<only>RGBA(0.356,0.188,0.007,1)</only>
+								</li>
+								<li>
+									<weight>10</weight>
+									<only>RGBA(0.239,0.125,0.003,1)</only>
+								</li>
+								<li>
+									<weight>10</weight>
+									<only>RGBA(0.129,0.066,0.0,1)</only>
+								</li>
+								<li>
+									<weight>10</weight>
+									<only>RGBA(0.388,0.203,0.007,1)</only>
 								</li>
 							</options>
 						</alienskincolorgen>
