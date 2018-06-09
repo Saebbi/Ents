@@ -2,7 +2,7 @@
 <Defs>
 
  <ThingDef ParentName="DoorBase">
-    <defName>Door</defName>
+    <defName>Entwood_Door</defName>
     <label>door</label>
     <description>A door made out of Entwood.</description>
     <statBases>
