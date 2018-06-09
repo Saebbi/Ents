@@ -62,9 +62,11 @@
 					<alienPartGenerator>
 						<aliencrowntypes>
 							<li>Average_Normal</li>
+							<li>Narrow_Normal</li>
 						</aliencrowntypes>
 						<alienbodytypes>
 							<li>Thin</li>
+							<li>Fat</li>
 							<li>Hulk</li>
 						</alienbodytypes>
 						<customDrawSize>(2.5,2.5)</customDrawSize>
