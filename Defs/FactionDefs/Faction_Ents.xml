@@ -65,4 +65,69 @@
     <homeIconPath>World/WorldObjects/Entlogo</homeIconPath>
   </FactionDef>
   
+  <FactionDef>
+    <defName>EntFactionHostile</defName>
+    <label>Hostile Ent tribe</label>
+    <description>An Ent tribe, which after seeing the Forests being chopped down by the other races, secluded themselves. They are now wandering the Forests in search for revenge and destruction.</description>
+	<basicMemberKind>EntMelee</basicMemberKind>
+    <pawnsPlural>Ents</pawnsPlural>
+    <baseSelectionWeight>1</baseSelectionWeight>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+	<fixedName>MenHunters</fixedName>
+    <canMakeRandomly>true</canMakeRandomly>
+		<raidCommonalityFromPointsCurve>
+			<points>
+				<li>(40, 3)</li>
+				<li>(400, 1)</li>
+			</points>
+		</raidCommonalityFromPointsCurve>
+    <canStageAttacks>false</canStageAttacks>
+    <expandingIconTexture>World/WorldObjects/Entlogo</expandingIconTexture>
+		<geneticVariance>0.1</geneticVariance>
+		<colorSpectrum>
+      <li>(0.4, 0.92, 0.35)</li>
+      <li>(0.89, 0.89, 0.7)</li>
+      <li>(1, 1, 0.1)</li>
+    </colorSpectrum>
+	<hairTags>
+		<li>NonExisting</li>
+	</hairTags>
+    <startingGoodwill>
+      <min>-100</min>
+      <max>-100</max>
+    </startingGoodwill>
+    <mustStartOneEnemy>false</mustStartOneEnemy>
+    <baseNameMaker>NamerFactionBaseTribal</baseNameMaker>
+    <pawnNameMaker>NamerEnts</pawnNameMaker>
+    <techLevel>Medieval</techLevel>
+    <backstoryCategory>Ent_Backstory</backstoryCategory>
+	<hidden>true</hidden>
+    <leaderTitle>ancient</leaderTitle>
+    <naturalColonyGoodwill>
+      <min>-100</min>
+      <max>-100</max>
+    </naturalColonyGoodwill>
+    <allowedArrivalTemperatureRange>
+      <min>-40</min>
+      <max>50</max>
+    </allowedArrivalTemperatureRange>
+    <pawnGroupMakers>
+      <li>
+        <kindDef>Normal</kindDef>
+        <commonality>50</commonality>
+        <options>
+          <EntMelee>400</EntMelee>
+          <EntRange>200</EntRange>
+        </options>
+      </li>
+      <li>
+        <kindDef>Normal</kindDef>
+        <commonality>50</commonality>
+        <options>
+          <EntRange>600</EntRange>
+        </options>
+      </li>
+    </pawnGroupMakers>
+  </FactionDef>
+  
 </Defs>
