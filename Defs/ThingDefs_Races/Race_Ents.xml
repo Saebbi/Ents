@@ -74,16 +74,8 @@
 						<alienskincolorgen Class="ColorGenerator_Options">
 							<options>
 								<li>
-									<weight>10</weight>
-									<only>RGBA(0.196,0.2,0.03,1)</only>
-								</li>
-								<li>
 									<weight>15</weight>
 									<only>RGBA(0.219,0.18,0.0,1)</only>
-								</li>
-								<li>
-									<weight>10</weight>
-									<only>RGBA(0.498,0.262,0.011,1)</only>
 								</li>
 								<li>
 									<weight>10</weight>
