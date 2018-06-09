@@ -3,7 +3,7 @@
 
  <ThingDef ParentName="DoorBase">
     <defName>Entwood_Door</defName>
-    <label>door</label>
+    <label>entwood door</label>
     <description>A door made out of Entwood.</description>
     <statBases>
       <WorkToBuild>1700</WorkToBuild>
