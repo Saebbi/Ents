@@ -245,7 +245,7 @@
 				<nameCategory>HumanStandard</nameCategory>
 				<body>EntBody</body>
 				<baseBodySize>2.5</baseBodySize>
-				<baseHealthScale>7.5</baseHealthScale>
+				<baseHealthScale>5</baseHealthScale>
 				<bloodDef>sap</bloodDef>
 				<foodType>OmnivoreHuman</foodType>
 				<gestationPeriodDays>45</gestationPeriodDays>

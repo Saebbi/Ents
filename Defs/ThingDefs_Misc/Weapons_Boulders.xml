@@ -53,6 +53,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<projectile>
+			<speed>40</speed>
 			<explosionRadius>1.5</explosionRadius>
 			<damageDef>Bomb</damageDef>
 			<damageAmountBase>20</damageAmountBase>
