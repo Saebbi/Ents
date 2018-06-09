@@ -25,7 +25,7 @@
 
   <ScenarioDef>
     <defName>LotR_Entling</defName>
-    <label>The lone Entling</label>
+    <label>The Lone Entling</label>
     <description>You are an Entling, supposedly the last one after the Extermination of all female Ents. Will you be able to build a future for yourself or succumb to the Challenges?</description>
     <scenario>
       <summary>A lone Entling escaped the ravaging Orcs and now walks along his own path.</summary>

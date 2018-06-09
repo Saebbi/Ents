@@ -41,12 +41,6 @@
 					<pawnsSpecificBackstories>true</pawnsSpecificBackstories>
 					<immuneToAge>true</immuneToAge>
 					<canLayDown>true</canLayDown>
-					<forcedRaceTraitEntries>
-						<li>
-							<defName>EntTrait</defName>
-							<chance>100</chance>
-						</li>
-					</forcedRaceTraitEntries>
 					<disallowedTraits>
 						<li>Pyromaniac</li>
 					</disallowedTraits>
@@ -70,7 +64,8 @@
 							<li>Average_Normal</li>
 						</aliencrowntypes>
 						<alienbodytypes>
-							<li>Male</li>
+							<li>Thin</li>
+							<li>Hulk</li>
 						</alienbodytypes>
 						<customDrawSize>(2.5,2.5)</customDrawSize>
 						<useGenderedHeads>false</useGenderedHeads>
@@ -175,6 +170,7 @@
 				</raceRestriction>
 			</alienRace>
 			<statBases>
+				<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
 				<CarryingCapacity>800</CarryingCapacity>
 				<Mass>320</Mass>
 				<MoveSpeed>2</MoveSpeed>

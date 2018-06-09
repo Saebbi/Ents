@@ -7,7 +7,7 @@
     <description>Ent tribe</description>
 	<basicMemberKind>EntMelee</basicMemberKind>
     <pawnsPlural>Ents</pawnsPlural>
-    <baseSelectionWeight>1</baseSelectionWeight>
+    <baseSelectionWeight>0.01</baseSelectionWeight>
     <requiredCountAtGameStart>1</requiredCountAtGameStart>
 	<fixedName>Onodrim</fixedName>
     <canMakeRandomly>true</canMakeRandomly>

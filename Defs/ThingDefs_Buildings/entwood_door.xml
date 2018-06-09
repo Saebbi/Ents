@@ -1,7 +1,51 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
- <ThingDef ParentName="DoorBase">
+  <ThingDef ParentName="BuildingBase" Name="EntDoorBase" Abstract="True">
+    <thingClass>Building_Door</thingClass>
+    <blueprintClass>Blueprint_Door</blueprintClass>
+    <category>Building</category>
+    <blueprintGraphicData>
+      <texPath>Things/Building/Door/Door_Blueprint</texPath>
+    </blueprintGraphicData>
+    <altitudeLayer>DoorMoveable</altitudeLayer>
+    <fillPercent>1</fillPercent>
+    <useHitPoints>true</useHitPoints>
+    <stuffCategories>
+      <li>Enty</li>
+    </stuffCategories>
+    <statBases>
+      <MaxHitPoints>250</MaxHitPoints>
+      <Flammability>0.8</Flammability>
+    </statBases>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <selectable>true</selectable>
+    <tickerType>Normal</tickerType>
+    <rotatable>false</rotatable>
+    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <designationCategory>Structure</designationCategory>
+    <holdsRoof>true</holdsRoof>
+    <staticSunShadowHeight>1.0</staticSunShadowHeight>
+    <blockLight>true</blockLight>
+    <drawerType>RealtimeOnly</drawerType>
+    <building>
+			<isInert>true</isInert>
+			<canPlaceOverWall>true</canPlaceOverWall>
+      <soundDoorOpenPowered>DoorOpenPowered</soundDoorOpenPowered>
+      <soundDoorClosePowered>DoorClosePowered</soundDoorClosePowered>
+      <soundDoorOpenManual>DoorOpenManual</soundDoorOpenManual>
+      <soundDoorCloseManual>DoorCloseManual</soundDoorCloseManual>
+    </building>
+    <comps>
+      <li Class="CompProperties_Forbiddable"/>
+    </comps>
+		<placeWorkers>
+			<li>PlaceWorker_DoorLearnOpeningSpeed</li>
+		</placeWorkers>
+  </ThingDef>
+
+ <ThingDef ParentName="EntDoorBase">
     <defName>Entwood_Door</defName>
     <label>entwood door</label>
     <description>A door made out of Entwood.</description>
@@ -18,12 +62,7 @@
       </damageData>
     </graphicData>
     <uiIconPath>Things/Doors/entwood_door_buildicon</uiIconPath>
-	 <stuffCategories>
-      <li>Enty</li>
-    </stuffCategories>
-	 <costList>
-      <EntWood>25</EntWood>
-    </costList> 
+    <costStuffCount>25</costStuffCount>
     <designationHotKey>Misc1</designationHotKey>
   </ThingDef>
 

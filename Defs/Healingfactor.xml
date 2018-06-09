@@ -3,15 +3,21 @@
 	<HediffDef>
 		<defName>EntHealingFactor</defName>
 		<hediffClass>Ent.HealingfactorHediff</hediffClass>
-		<label>Ent healing factor</label>
+		<label>Racial Bonus</label>
 		<defaultLabelColor>(0.6,0.85,0.91)</defaultLabelColor>
 		<isBad>false</isBad>
 		<scenarioCanAdd>true</scenarioCanAdd>
 		<maxSeverity>1.0</maxSeverity>
 		<stages>
 			<li>
-				<label>X</label>
+				<label>Ent</label>
 				<minSeverity>0.0</minSeverity>
+				<statOffsets>
+					<MentalBreakThreshold>-0.22</MentalBreakThreshold>
+					<PlantWorkSpeed>1.5</PlantWorkSpeed>
+					<PlantHarvestYield>1.5</PlantHarvestYield>
+					<ImmunityGainSpeed>2</ImmunityGainSpeed>
+				</statOffsets>
 			</li>
 		</stages>
 		<modExtensions>
@@ -19,9 +25,9 @@
 				<tendWoundStage>0</tendWoundStage>
 				<regrowBodypartStage>0</regrowBodypartStage>
 				<healWoundFactorMin>0.002</healWoundFactorMin>
-				<healWoundFactorMax>0.2</healWoundFactorMax>
-				<ticksBetweenMajorHeal>2000</ticksBetweenMajorHeal>
-				<ticksBetweenMinorHeal>60</ticksBetweenMinorHeal>
+				<healWoundFactorMax>0.1</healWoundFactorMax>
+				<ticksBetweenMajorHeal>4500</ticksBetweenMajorHeal>
+				<ticksBetweenMinorHeal>800</ticksBetweenMinorHeal>
 				<healOldWoundStage>0</healOldWoundStage>
 			</li>
 		</modExtensions>
@@ -60,7 +66,7 @@
 		</stages>
 		<comps>
 			<li Class="HediffCompProperties_Immunizable">
-				<severityPerDayNotImmune>0.7</severityPerDayNotImmune> <!-- 0.07 is roughly a Quadrum (15 days) -->
+				<severityPerDayNotImmune>0.1</severityPerDayNotImmune> <!-- 0.07 is roughly a Quadrum (15 days) -->
 			</li>
 		</comps>
 	</HediffDef>
