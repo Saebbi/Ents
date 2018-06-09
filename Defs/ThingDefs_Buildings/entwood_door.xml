@@ -18,7 +18,12 @@
       </damageData>
     </graphicData>
     <uiIconPath>Things/Doors/entwood_door_buildicon</uiIconPath>
-    <costStuffCount>25</costStuffCount>
+	 <stuffCategories>
+      <li>Enty</li>
+    </stuffCategories>
+	 <costList>
+      <EntWood>25</EntWood>
+    </costList> 
     <designationHotKey>Misc1</designationHotKey>
   </ThingDef>
 
