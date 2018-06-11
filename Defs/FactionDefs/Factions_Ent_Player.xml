@@ -22,7 +22,6 @@
 		<backstoryCategory>Ent_Backstory</backstoryCategory>
 		<expandingIconTexture>World/WorldObjects/Expanding/Village</expandingIconTexture>
 		<homeIconPath>World/WorldObjects/TribalFactionBase</homeIconPath>
-		<pawnNameMaker>NamerEnts</pawnNameMaker>
 		<baseNameMaker>NamerFactionBasePlayerTribe</baseNameMaker>
 		<baseNameMakerPlayer>NamerFactionTribal</baseNameMakerPlayer>
 		<factionNameMakerPlayer>NamerFactionBaseTribal</factionNameMakerPlayer>

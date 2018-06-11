@@ -1,34 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
 <Defs>
-
-	<ThingDef Name = "BasePawn" Abstract = "True">
-	<thingClass>Pawn</thingClass>
-	<category>Pawn</category>
-	<selectable>true</selectable>
-	<tickerType>Normal</tickerType>
-	<altitudeLayer>Pawn</altitudeLayer>
-	<useHitPoints>false</useHitPoints>
-	<hasTooltip>true</hasTooltip>
-	<soundImpactDefault>HitEnt</soundImpactDefault>
-		<inspectorTabs>
-			<li>Itab_Pawn_Health</li>
-			<li>Itab_Pawn_Needs</li>
-			<li>Itab_Pawn_Character</li>
-			<li>Itab_Pawn_Training</li>
-			<li>Itab_Pawn_Gear</li>
-			<li>Itab_Pawn_Guest</li>
-			<li>Itab_Pawn_Prisoner</li>
-			<li>Itab_Pawn_Social</li>
-			<li>Itab_Pawn_Combat</li>
-		</inspectorTabs>
-		<comps>
-			<li>
-				<compClass>CompAttachBase</compClass>
-			</li>
-		</comps>
-		<drawGUIOverlay>true</drawGUIOverlay>
-	</ThingDef>
 	
 	<AlienRace.ThingDef_AlienRace ParentName = "BasePawn">
 		<defName>Ent_Race</defName>
@@ -40,7 +12,7 @@
 					<maleGenderProbability>1.0</maleGenderProbability>
 					<pawnsSpecificBackstories>true</pawnsSpecificBackstories>
 					<immuneToAge>true</immuneToAge>
-					<canLayDown>true</canLayDown>
+					<canLayDown>false</canLayDown>
 					<disallowedTraits>
 						<li>Pyromaniac</li>
 					</disallowedTraits>
@@ -188,6 +160,7 @@
 			</alienRace>
 			<statBases>
 				<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+				<ArmorRating_Sharp>0.2</ArmorRating_Sharp>
 				<CarryingCapacity>800</CarryingCapacity>
 				<Mass>320</Mass>
 				<MoveSpeed>2</MoveSpeed>
@@ -247,6 +220,7 @@
 			</tools>
 			<race>
 				<thinkTreeMain>Humanlike</thinkTreeMain>
+				<nameGenerator>NamerEnts</nameGenerator>
 				<thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
 				<intelligence>Humanlike</intelligence>
 				<makesFootprints>true</makesFootprints>

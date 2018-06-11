@@ -17,7 +17,7 @@
 					<PlantWorkSpeed>1.5</PlantWorkSpeed>
 					<PlantHarvestYield>1.5</PlantHarvestYield>
 					<ImmunityGainSpeed>2</ImmunityGainSpeed>
-					<SocialChatImpact>-0.2</SocialChatImpact>
+					<SocialImpact>-0.2</SocialImpact>
 				</statOffsets>
 			</li>
 		</stages>

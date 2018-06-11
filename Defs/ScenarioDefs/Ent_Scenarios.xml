@@ -1,37 +1,15 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <FactionDef ParentName="PlayerFactionBase">
-    <defName>Ent_PlayerColony</defName>
-    <label>Ent Settlement</label>
-    <description>Your own community.</description>
-    <isPlayer>true</isPlayer>
-    <basicMemberKind>PlayerEnt</basicMemberKind>
-    <pawnsPlural>colonists</pawnsPlural>
-    <techLevel>Medieval</techLevel>
-	<hairTags>
-		<li>NonExisting</li>
-	</hairTags>
-    <backstoryCategory>Ent_Backstory</backstoryCategory>
-    <expandingIconTexture>World/WorldObjects/Expanding/Town</expandingIconTexture>
-		<baseNameMaker>NamerFactionBasePlayerColony</baseNameMaker>
-		<baseNameMakerPlayer>NamerFactionPlayerColonyRandomized</baseNameMakerPlayer>
-		<factionNameMakerPlayer>NamerFactionBasePlayerColonyRandomized</factionNameMakerPlayer>
-		<geneticVariance>1</geneticVariance>
-		<startingResearchTags>
-			<li>ClassicStart</li>
-		</startingResearchTags>
-	</FactionDef>
-
   <ScenarioDef>
     <defName>LotR_Entling</defName>
-    <label>The Lone Entling</label>
+    <label>Ents - The Lone Entling</label>
     <description>You are an Entling, supposedly the last one after the Extermination of all female Ents. Will you be able to build a future for yourself or succumb to the Challenges?</description>
     <scenario>
       <summary>A lone Entling escaped the ravaging Orcs and now walks along his own path.</summary>
       <playerFaction>
         <def>PlayerFaction</def>
-        <factionDef>Ent_PlayerColony</factionDef>
+        <factionDef>EntPlayerTribe</factionDef>
       </playerFaction>
       <parts>
 

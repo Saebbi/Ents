@@ -7,7 +7,7 @@
     <description>Ent tribe</description>
 	<basicMemberKind>EntMelee</basicMemberKind>
     <pawnsPlural>Ents</pawnsPlural>
-    <baseSelectionWeight>0.01</baseSelectionWeight>
+    <baseSelectionWeight>0.005</baseSelectionWeight>
     <requiredCountAtGameStart>1</requiredCountAtGameStart>
 	<fixedName>Onodrim</fixedName>
     <canMakeRandomly>true</canMakeRandomly>
@@ -34,7 +34,6 @@
     </startingGoodwill>
     <mustStartOneEnemy>false</mustStartOneEnemy>
     <baseNameMaker>NamerFactionBaseTribal</baseNameMaker>
-    <pawnNameMaker>NamerEnts</pawnNameMaker>
     <techLevel>Medieval</techLevel>
     <backstoryCategory>Ent_Backstory</backstoryCategory>
     <leaderTitle>ancient</leaderTitle>
@@ -98,7 +97,6 @@
     </startingGoodwill>
     <mustStartOneEnemy>false</mustStartOneEnemy>
     <baseNameMaker>NamerFactionBaseTribal</baseNameMaker>
-    <pawnNameMaker>NamerEnts</pawnNameMaker>
     <techLevel>Medieval</techLevel>
     <backstoryCategory>Ent_Backstory</backstoryCategory>
 	<hidden>true</hidden>

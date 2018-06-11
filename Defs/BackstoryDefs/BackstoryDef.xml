@@ -32,8 +32,6 @@
         <defName>Pyromaniac</defName>
       </li>
     </disallowedTraits>
-    <maleCommonality>20</maleCommonality>
-	<femaleCommonality>20</femaleCommonality>
 	<spawnCategories>
 	  <li>Ent_Backstory</li>
 	</spawnCategories>
