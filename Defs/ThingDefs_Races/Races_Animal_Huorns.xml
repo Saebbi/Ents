@@ -126,7 +126,7 @@
     <lifeStages>
       <li>
         <bodyGraphicData>
-          <texPath>Pawn/Huorn</texPath>
+          <texPath>Pawn/Huorns/huorn</texPath>
           <drawSize>2.5</drawSize>
           <shadowData>
             <volume>(1, 0.8, 0.5)</volume>

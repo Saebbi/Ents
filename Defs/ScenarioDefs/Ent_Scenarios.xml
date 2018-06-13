@@ -47,6 +47,12 @@
           <thingDef>HerbalMedicine</thingDef>
           <count>30</count>
         </li>
+        <li Class="ScenPart_StartingAnimal">
+          <def>StartingAnimal</def>
+          <count>3</count>
+		  <animalKind>HuornKind</animalKind>
+          <bondToRandomPlayerPawnChance>1.0</bondToRandomPlayerPawnChance>
+        </li>
 		
         <!-- Scatter some things near player start -->
         <li Class="ScenPart_ScatterThingsNearPlayerStart">

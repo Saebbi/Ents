@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <WorkGiverDef>
+    <defName>DoBillsEntWell</defName>
+    <label>make ent draught</label>
+    <giverClass>WorkGiver_DoBill</giverClass>
+    <workType>Cooking</workType>
+    <priorityInType>60</priorityInType>
+    <fixedBillGiverDefs>
+      <li>EntWell</li>
+    </fixedBillGiverDefs>
+    <verb>produce ent draught</verb>
+    <gerund>producing ent draught at</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>
+
+</Defs>
