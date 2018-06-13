@@ -23,8 +23,6 @@
       <MaxHitPoints>250</MaxHitPoints>
       <Flammability>0.0</Flammability>
     </statBases>
-		<scatterableOnMapGen>false</scatterableOnMapGen>
-		<useHitPoints>False</useHitPoints>
     <size>(2,2)</size>
     <designationCategory>Production</designationCategory>
     <passability>Standable</passability>

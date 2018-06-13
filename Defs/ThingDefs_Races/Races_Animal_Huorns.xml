@@ -6,16 +6,18 @@
     <description>The Huorns are creatures not unlike the Ents, but without displaying signs of true sentience, they resemble trees more closely than Ents.</description><!-- add something about this majestic thing-->
     <statBases>
       <MoveSpeed>1.1</MoveSpeed>
+	  <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+	  <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
       <ComfyTemperatureMin>-200</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>80</ComfyTemperatureMax>
       <MarketValue>6500</MarketValue>
       <MeatAmount>0</MeatAmount>
     </statBases>
     <comps>
-      <li Class="CompProperties_Milkable">
-        <milkDef>HuornSap</milkDef>
-        <milkIntervalDays>1</milkIntervalDays>
-        <milkAmount>15</milkAmount>
+      <li Class="CompProperties_Shearable">
+        <woolDef>HuornSap</woolDef>
+        <shearIntervalDays>3</shearIntervalDays>
+        <woolAmount>20</woolAmount>
       </li>
     </comps>
     <tools>
@@ -58,6 +60,7 @@
       <body>HuornBody</body>
       <herdAnimal>false</herdAnimal>
 	  <predator>false</predator>
+      <hasGenders>false</hasGenders>
 	  <nuzzleMtbHours>15</nuzzleMtbHours>
       <baseBodySize>2.5</baseBodySize>
       <baseHungerRate>0</baseHungerRate>
