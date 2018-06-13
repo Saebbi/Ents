@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--=====================================================================-->
+  <!--=============================== Misc ================================-->
+  <!--=====================================================================-->
+
+  <ThingDef ParentName="OrganicProductBase">
+    <defName>HuornSap</defName>
+    <label>huorn sap</label>
+    <description>Sap extracted from a Huorn.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/HuornSap</texPath>
+    </graphicData>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <statBases>
+      <MarketValue>30</MarketValue>
+      <Mass>0.045</Mass>
+			<MaxHitPoints>60</MaxHitPoints>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>28</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+    <ingestible>
+      <preferability>RawTasty</preferability>
+      <foodType>AnimalProduct, Fluid</foodType>
+      <nutrition>0.2</nutrition>
+    </ingestible>
+    <thingCategories>
+      <li>AnimalProductRaw</li>
+      <li>HSap</li>
+    </thingCategories>
+  </ThingDef>
+
+</Defs>

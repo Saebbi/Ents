@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef Name="EntBodyPartBase" Abstract="True">
+    <thingClass>ThingWithComps</thingClass>
+    <category>Item</category>
+    <useHitPoints>true</useHitPoints>
+    <selectable>true</selectable>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+			<Beauty>+4</Beauty>
+		</statBases>
+    <altitudeLayer>Item</altitudeLayer>
+    <tickerType>Never</tickerType>
+    <alwaysHaulable>true</alwaysHaulable>
+    <isBodyPartOrImplant>true</isBodyPartOrImplant>
+    <tradeTags>
+      <li>BodyPartOrImplant</li>
+    </tradeTags>
+    <comps>
+      <li Class="CompProperties_Forbiddable"/>
+    </comps>
+    <pathCost>10</pathCost>
+  </ThingDef>
+
+  <ThingDef ParentName="EntBodyPartBase" Name="EntBodyPartNaturalBase" Abstract="True">
+    <thingCategories>
+      <li>BodyPartsNatural</li>
+    </thingCategories>
+		<statBases>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+  </ThingDef>
+
+  <!-- natural -->
+
+  <ThingDef ParentName="BodyPartNaturalBase">
+    <defName>EntHeart</defName>
+    <label>Ent heart</label>
+    <description>Vital organ of the Ents. Very valuable.</description>
+    <graphicData>
+      <texPath>Things/Item/BodyPart/Organ</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>5000</MarketValue>
+      <Mass>8.5</Mass>
+    </statBases>
+  </ThingDef>
+
+  <ThingDef ParentName="BodyPartNaturalBase">
+    <defName>HuornHeart</defName>
+    <label>Huorns heart</label>
+    <description>Vital organ of the Huorns. Quite valuable.</description>
+    <graphicData>
+      <texPath>Things/Item/BodyPart/Organ</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>1200</MarketValue>
+      <Mass>8.5</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="BodyPartNaturalBase">
+    <defName>EntStomach</defName>
+    <label>Ent stomach</label>
+    <description>Stomach of an Ent.</description>
+    <graphicData>
+      <texPath>Things/Item/BodyPart/Organ</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>1500</MarketValue>
+      <Mass>2</Mass>
+    </statBases>
+  </ThingDef>
+
+</Defs>

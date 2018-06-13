@@ -3,8 +3,8 @@
 
 
   <BodyDef>
-    <defName>EntBody</defName>
-    <label>Ent</label>
+    <defName>HuornBody</defName>
+    <label>Huorn</label>
     <corePart>
       <def>Torso</def>
       <height>Middle</height>
@@ -135,16 +135,8 @@
           </groups>
         </li>
         <li>
-          <def>EntStomach</def>
-          <coverage>0.015</coverage>
-          <depth>Inside</depth>
-          <groups>
-            <li>Torso</li>
-          </groups>
-        </li>
-        <li>
-          <def>EntHeart</def>
-          <coverage>0.02</coverage>
+          <def>HuornHeart</def>
+          <coverage>0.025</coverage>
           <depth>Inside</depth>
           <groups>
             <li>Torso</li>

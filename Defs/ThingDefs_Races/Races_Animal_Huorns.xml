@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+ <ThingDef ParentName="AnimalThingBase">
+    <defName>Huorn</defName>
+    <label>Huorn</label>
+    <description>The Huorns are creatures not unlike the Ents, but without displaying signs of true sentience, they resemble trees more closely than Ents.</description><!-- add something about this majestic thing-->
+    <statBases>
+      <MoveSpeed>1.1</MoveSpeed>
+      <ComfyTemperatureMin>-200</ComfyTemperatureMin>
+	  <ComfyTemperatureMax>80</ComfyTemperatureMax>
+      <MarketValue>6500</MarketValue>
+      <MeatAmount>0</MeatAmount>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Milkable">
+        <milkDef>HuornSap</milkDef>
+        <milkIntervalDays>1</milkIntervalDays>
+        <milkAmount>15</milkAmount>
+      </li>
+    </comps>
+    <tools>
+     <li>
+        <label>left tree branch</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <cooldownTime>2.8</cooldownTime>
+        <power>30</power>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+		 <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>60</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+     <li>
+        <label>right tree branch</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <cooldownTime>2.8</cooldownTime>
+        <power>30</power>
+        <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+		 <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>60</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+    </tools>
+    <race>
+      <body>HuornBody</body>
+      <herdAnimal>false</herdAnimal>
+	  <predator>false</predator>
+	  <nuzzleMtbHours>15</nuzzleMtbHours>
+      <baseBodySize>2.5</baseBodySize>
+      <baseHungerRate>0</baseHungerRate>
+      <baseHealthScale>4.0</baseHealthScale>
+	  <bloodDef>sap</bloodDef>
+	  <packAnimal>false</packAnimal>
+      <foodType>CarnivoreAnimal</foodType>
+      <leatherColor>(160,139,96)</leatherColor>
+      <leatherInsulation>1.5</leatherInsulation>
+      <leatherCommonalityFactor>0.00</leatherCommonalityFactor>
+      <leatherMarketValueFactor>20</leatherMarketValueFactor>
+      <trainableIntelligence>Advanced</trainableIntelligence>
+      <gestationPeriodDays>50</gestationPeriodDays>
+      <manhunterOnDamageChance>1</manhunterOnDamageChance>
+      <manhunterOnTameFailChance>0.15</manhunterOnTameFailChance>
+      <wildness>0.65</wildness>
+	  <nameOnTameChance>1</nameOnTameChance>
+      <lifeExpectancy>20000</lifeExpectancy>
+      <lifeStageAges>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>0.0</minAge>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+	  <litterSizeCurve>
+        <points>
+          <li>(0.3, 0)</li>
+          <li>(0.7, 1)</li>
+          <li>(1.1, 0)</li>
+        </points>
+      </litterSizeCurve>
+	  <wildBiomes>
+		<TemperateForest>0.05</TemperateForest>
+        <BorealForest>0.05</BorealForest>
+		<TropicalSwamp>0.05</TropicalSwamp>
+		<TemperateSwamp>0.05</TemperateSwamp>
+		<TropicalRainforest>0.05</TropicalRainforest>
+	  </wildBiomes>
+     <hediffGiverSets>
+    	 <li>HuornX</li>
+     </hediffGiverSets>
+    </race>
+	<butcherProducts>
+		<WoodLog>20</WoodLog>
+		<EntWood>20</EntWood>
+	</butcherProducts>
+  </ThingDef>
+
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>HuornKind</defName>
+    <label>Huorn</label>
+    <race>Huorn</race>
+    <combatPower>400</combatPower>
+	<canArriveManhunter>true</canArriveManhunter>
+    <wildSpawn_spawnWild>true</wildSpawn_spawnWild>
+		<wildSpawn_GroupSizeRange>
+			<min>1</min>
+			<max>10</max>
+    </wildSpawn_GroupSizeRange>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/manbearpig</texPath>
+          <drawSize>2.5</drawSize>
+          <shadowData>
+            <volume>(1, 0.8, 0.5)</volume>
+            <offset>(0,0,-0.5)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Muffalo/MuffaloDessicated</texPath>
+          <drawSize>2.5</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+</Defs>

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RecipeDef>
+		<defName>MakeEntDraught</defName>
+		<label>make ent draught</label>
+		<description>Make a batch of ent draught.</description>
+		<jobString>Making ent draught.</jobString>
+		<workAmount>2500</workAmount>
+		<workSkill>Cooking</workSkill>
+		<recipeUsers>
+			<li>EntWell</li>
+		</recipeUsers>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>HSap</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>HSap</li>
+			</categories>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<categories>
+				<li>HSap</li>
+			</categories>
+		</defaultIngredientFilter>
+		<products>
+			<Ent_Draught>2</Ent_Draught>
+		</products>
+	</RecipeDef>
+
+</Defs>

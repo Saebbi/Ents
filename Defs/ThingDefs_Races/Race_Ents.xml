@@ -226,7 +226,7 @@
 				<makesFootprints>true</makesFootprints>
 				<lifeExpectancy>10000</lifeExpectancy>
 				<leatherColor>(211,194,143)</leatherColor>
-				<leatherCommonalityFactor>0.01</leatherCommonalityFactor>
+				<leatherCommonalityFactor>0.00</leatherCommonalityFactor>
 				<leatherInsulation>0.40</leatherInsulation>
 				<leatherMarketValueFactor>2</leatherMarketValueFactor>
 				<nameCategory>HumanStandard</nameCategory>
