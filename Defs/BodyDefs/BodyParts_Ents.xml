@@ -13,10 +13,29 @@
       <li>BreathingSource</li>
       <li>BloodFiltrationKidney</li>
       <li>BloodFiltrationLiver</li>
+      <li>MetabolismSource</li>
+      <li>ConsciousnessSource</li>
     </tags>
     <spawnThingOnRemoved>EntHeart</spawnThingOnRemoved>
   </BodyPartDef>
 
+  <BodyPartDef>
+    <defName>EntTrunk</defName>
+    <label>Ent trunk</label>
+    <hitPoints>60</hitPoints>
+    <oldInjuryBaseChance>0.0</oldInjuryBaseChance>
+    <bleedingRateMultiplier>1</bleedingRateMultiplier>
+    <skinCovered>false</skinCovered>
+    <tags>
+      <li>BloodPumpingSource</li>
+      <li>BreathingSource</li>
+      <li>BloodFiltrationKidney</li>
+      <li>BloodFiltrationLiver</li>
+      <li>ConsciousnessSource</li>
+      <li>MetabolismSource</li>
+    </tags>
+  </BodyPartDef>
+  
   <BodyPartDef>
     <defName>HuornHeart</defName>
     <label>Huorn heart</label>
@@ -30,6 +49,7 @@
       <li>BloodFiltrationKidney</li>
       <li>BloodFiltrationLiver</li>
       <li>MetabolismSource</li>
+      <li>ConsciousnessSource</li>
     </tags>
     <spawnThingOnRemoved>HuornHeart</spawnThingOnRemoved>
   </BodyPartDef>
@@ -42,6 +62,7 @@
     <skinCovered>false</skinCovered>
     <tags>
       <li>MetabolismSource</li>
+      <li>ConsciousnessSource</li>
     </tags>
   </BodyPartDef>
   
