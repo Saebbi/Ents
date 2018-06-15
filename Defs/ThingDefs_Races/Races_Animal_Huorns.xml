@@ -132,6 +132,7 @@
             <volume>(1, 0.8, 0.5)</volume>
             <offset>(0,0,-0.5)</offset>
           </shadowData>
+          <graphicClass>Better_Pawn_Textures.Graphic</graphicClass>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/Muffalo/MuffaloDessicated</texPath>
@@ -139,5 +140,17 @@
         </dessicatedBodyGraphicData>
       </li>
     </lifeStages>
+    <modExtensions>
+		<li Class="Better_Pawn_Textures.BPTModExtension">
+			<colors>
+				<li>(127,67,3)</li>
+				<li>(68,36,2)</li>
+				<li>(56,29,1)</li>
+				<li>(61,32,1)</li>
+				<li>(33,17,0)</li>
+				<li>(99,52,2)</li>
+			</colors>
+		</li>
+    </modExtensions>
   </PawnKindDef>
 </Defs>
